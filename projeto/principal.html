@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agenda de Compromissos</title>
+    <link rel="stylesheet" href="css/principal.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Agenda de Compromissos</h1>
+        <div class="calendar-controls">
+            <select id="month-select"></select>
+            <select id="year-select"></select>
+        </div>
+        <div id="calendar"></div>
+        <div id="event-form" class="hidden">
+            <h2 id="form-title">Adicionar Compromisso</h2>
+            <form>
+                <input type="hidden" id="event-date">
+                <label for="event-text">Compromisso:</label>
+                <input type="text" id="event-text">
+                <button type="button" id="save-event">Salvar</button>
+                <button type="button" id="delete-event">Excluir</button>
+            </form>
+        </div>
+    </div>
+    <script src="js/principal.js"></script>
+</body>
+</html>
